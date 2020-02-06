@@ -1,0 +1,13 @@
+{
+    "catalog_banners": {
+        "column": {
+            "banner_id": true,
+            "category_id": true,
+            "is_active": true,
+            "content": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
