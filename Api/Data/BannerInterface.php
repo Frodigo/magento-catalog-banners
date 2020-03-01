@@ -55,13 +55,13 @@ interface BannerInterface
      */
     public function setId($value);
 
-    /**
-     * Set category Id
-     *
-     * @param int $categoryId
-     * @return BannerInterface
-     */
-    public function setCategoryId(int $categoryId): BannerInterface;
+/**
+ * Set category Id
+ *
+ * @param int $categoryId
+ * @return BannerInterface
+ */
+public function setCategoryId(int $categoryId): BannerInterface;
 
     /**
      * Set is active

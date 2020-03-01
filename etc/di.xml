@@ -6,4 +6,5 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Mkwiatkowski\CatalogBanners\Api\Data\BannerInterface" type="Mkwiatkowski\CatalogBanners\Model\Block" />
+    <preference for="Mkwiatkowski\CatalogBanners\Api\BannerRepositoryInterface" type="Mkwiatkowski\CatalogBanners\Model\BannerRepository" />
 </config>
