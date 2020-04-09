@@ -7,7 +7,8 @@
 <schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
     <table name="catalog_banners">
-        <column xsi:type="int" name="banner_id" padding="10" unsigned="true" nullable="false" comment="Entity Id"/>
+        <column xsi:type="smallint" name="banner_id" padding="6" unsigned="false" nullable="false" identity="true"
+                comment="Entity Id"/>
         <column xsi:type="int" name="category_id" padding="10" unsigned="true" nullable="false"
                 comment="Category id to which the banner is assigned"/>
         <column xsi:type="boolean" name="is_active" nullable="false" comment="Is banner active" />

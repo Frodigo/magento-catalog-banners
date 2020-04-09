@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @copyright Copyright (C) 2020 Marcin Kwiatkowski (http://marcin-kwiatkowski.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Mkwiatkowski_CatalogBanners::banners" title="Catalog Banners" translate="title"
+             module="Mkwiatkowski_CatalogBanners" parent="Magento_Catalog::catalog" sortOrder="50"
+             resource="Mkwiatkowski_CatalogBanners::banners"/>
+        <add id="Mkwiatkowski_CatalogBanners::banners_add" title="Add new banner" translate="title"
+             module="Mkwiatkowski_CatalogBanners" parent="Mkwiatkowski_CatalogBanners::banners" sortOrder="10"
+             action="catalogbanners/banner/form"
+             resource="Mkwiatkowski_CatalogBanners::banner"/>
+    </menu>
+</config>
