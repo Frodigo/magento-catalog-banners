@@ -7,4 +7,19 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Mkwiatkowski\CatalogBanners\Api\Data\BannerInterface" type="Mkwiatkowski\CatalogBanners\Model\Banner" />
     <preference for="Mkwiatkowski\CatalogBanners\Api\BannerRepositoryInterface" type="Mkwiatkowski\CatalogBanners\Model\BannerRepository" />
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="banner_listing_data_source" xsi:type="string">Mkwiatkowski\CatalogBanners\Model\ResourceModel\Banner\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Mkwiatkowski\CatalogBanners\Model\ResourceModel\Banner\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">catalog_banners</argument>
+            <argument name="eventPrefix" xsi:type="string">banner_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">banner_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Mkwiatkowski\CatalogBanners\Model\ResourceModel\Banner</argument>
+        </arguments>
+    </type>
 </config>
