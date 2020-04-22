@@ -17,6 +17,13 @@ use Mkwiatkowski\CatalogBanners\Api\BannerRepositoryInterface;
 class Delete extends Action implements HttpPostActionInterface
 {
     /**
+     * Authorization level of a basic admin session
+     *
+     * @see _isAllowed()
+     */
+    const ADMIN_RESOURCE = 'Mkwiatkowski_CatalogBanners::banners';
+
+    /**
      * @var BannerRepositoryInterface
      */
     private $bannerRepository;

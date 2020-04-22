@@ -21,7 +21,7 @@ class Index extends Action implements HttpGetActionInterface
      *
      * @see _isAllowed()
      */
-    const ADMIN_RESOURCE = 'Mkwiatkowski_CatalogBanners::banner';
+    const ADMIN_RESOURCE = 'Mkwiatkowski_CatalogBanners::banners_index';
 
     /**
      * Menu identifier

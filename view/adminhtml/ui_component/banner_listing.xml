@@ -30,7 +30,7 @@
             </storageConfig>
             <updateUrl path="mui/index/render"/>
         </settings>
-        <aclResource>Mkwiatkowski_CatalogBanners::banner</aclResource>
+        <aclResource>Mkwiatkowski_CatalogBanners::banners_index</aclResource>
         <dataProvider class="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider" name="banner_listing_data_source">
             <settings>
                 <requestFieldName>banner_id</requestFieldName>
@@ -61,6 +61,17 @@
                     <options class="Magento\Catalog\Ui\Component\Product\Form\Categories\Options"/>
                     <label translate="true">Category id</label>
                     <dataScope>category_id</dataScope>
+                    <imports>
+                        <link name="visible">componentType = column, index = ${ $.index }:visible</link>
+                    </imports>
+                </settings>
+            </filterSelect>
+            <filterSelect name="store_id" provider="${ $.parentName }">
+                <settings>
+                    <captionValue>0</captionValue>
+                    <options class="Magento\Cms\Ui\Component\Listing\Column\Cms\Options"/>
+                    <label translate="true">Store View</label>
+                    <dataScope>store_id</dataScope>
                     <imports>
                         <link name="visible">componentType = column, index = ${ $.index }:visible</link>
                     </imports>

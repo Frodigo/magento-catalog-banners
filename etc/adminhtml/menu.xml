@@ -12,10 +12,10 @@
         <add id="Mkwiatkowski_CatalogBanners::banners_index" title="Banners list" translate="title"
              module="Mkwiatkowski_CatalogBanners" parent="Mkwiatkowski_CatalogBanners::banners" sortOrder="5"
              action="catalogbanners/banner"
-             resource="Mkwiatkowski_CatalogBanners::banner"/>
+             resource="Mkwiatkowski_CatalogBanners::banners_index"/>
         <add id="Mkwiatkowski_CatalogBanners::banners_add" title="Add new banner" translate="title"
              module="Mkwiatkowski_CatalogBanners" parent="Mkwiatkowski_CatalogBanners::banners" sortOrder="10"
              action="catalogbanners/banner/form"
-             resource="Mkwiatkowski_CatalogBanners::banner"/>
+             resource="Mkwiatkowski_CatalogBanners::banners_add"/>
     </menu>
 </config>

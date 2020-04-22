@@ -24,7 +24,7 @@ class InlineEdit extends Action implements HttpPostActionInterface
      *
      * @see _isAllowed()
      */
-    const ADMIN_RESOURCE = 'Mkwiatkowski_CatalogBanners::banner';
+    const ADMIN_RESOURCE = 'Mkwiatkowski_CatalogBanners::banners';
 
     /**
      * @var BannerRepositoryInterface
