@@ -6,6 +6,7 @@ declare(strict_types=1);
 namespace Mkwiatkowski\CatalogBanners\Model\Banner\Source;
 
 use Magento\Framework\Data\OptionSourceInterface;
+use Mkwiatkowski\CatalogBanners\Api\Data\BannerInterface;
 
 /**
  * Class IsActive
@@ -22,11 +23,11 @@ class IsActive implements OptionSourceInterface
     {
         return [
             [
-                'value' => 0,
+                'value' => BannerInterface::STATUS_DISABLED,
                 'label' => __('Disabled')
             ],
             [
-                'value' => 1,
+                'value' => BannerInterface::STATUS_ENABLED,
                 'label' => __('Enabled'),
             ]
 

@@ -1,0 +1,19 @@
+<?php
+/**
+ * @copyright Copyright (C) 2020 Marcin Kwiatkowski (http://marcin-kwiatkowski.com)
+ */
+
+/** @var $block \Magento\Framework\View\Element\Template */
+/** @var \Mkwiatkowski\CatalogBanners\ViewModel\CatalogBanners $viewModel */
+$viewModel = $block->getViewModel();
+$banners = $viewModel->getBannersForCurrentCategory();
+?>
+<?php if (null !== $banners): ?>
+    <?php foreach ($banners as $bannerContent): ?>
+        <div class="banner">
+            <div class="banner__content">
+                <?= $bannerContent; ?>
+            </div>
+        </div>
+    <?php endforeach; ?>
+<?php endif; ?>

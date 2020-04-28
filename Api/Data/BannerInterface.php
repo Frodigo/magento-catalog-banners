@@ -20,6 +20,12 @@ interface BannerInterface
     const CONTENT = 'content';
 
     /**
+     * Constants for banner status.
+     */
+    const STATUS_ENABLED = 1;
+    const STATUS_DISABLED = 0;
+
+    /**
      * Get banner id
      *
      * @return int
