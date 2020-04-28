@@ -7,6 +7,8 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Mkwiatkowski\CatalogBanners\Api\Data\BannerInterface" type="Mkwiatkowski\CatalogBanners\Model\Banner" />
     <preference for="Mkwiatkowski\CatalogBanners\Api\BannerRepositoryInterface" type="Mkwiatkowski\CatalogBanners\Model\BannerRepository" />
+    <preference for="Mkwiatkowski\CatalogBanners\Api\Data\BannerSearchResultsInterface"
+                type="Magento\Framework\Api\SearchResults" />
     <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
         <arguments>
             <argument name="collections" xsi:type="array">
